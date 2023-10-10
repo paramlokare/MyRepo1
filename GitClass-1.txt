@@ -1,0 +1,194 @@
+Git Operations --- practicle
+
+	GUI --- Git Hub
+
+	commands
+
+	1)Git Administrator
+	2)Git Users
+
+on GitHub --- repository --- Folder
+
+		project files
+		text files
+		documents
+		flash files
+		audio files
+
+Version Controle System:
+
+	--all project files are stores in version by version
+
+	1)Central Version Controle System (CVCS)
+
+	2)Distributed Version COntrole System (DVCS)
+
+
+File ---- 10 lines  ----- V1
+
+File ---- 15 lines  ----- +5 lines ------ V2,v1 ref
+
+File ---- 7 lines  ------ (-8) lines ---- v3,v2 ref
+
+------------------------------------------------------
+
+Git LifeCycle :
+
+1)initialisation
+	
+	git init
+
+2)push the data to stagging area
+
+	git add <file-name>
+
+3)commit the data
+
+	git commit -m "Message"
+
+
+1)Create "Working directory" (Folder) ---> git init --> Local Repo -----> add files here
+
+	by default your files are in non tracking area (red in colour)
+
+	git add data
+
+	push data from non tracking area to stagging area (green in colour)
+
+	git commit
+
+	Saves the data from  stagging area
+
+  if i create a new branch 
+
+	base branch files are copied to new branch 
+
+
+	URL : https://github.com/MYTCS-1/myrepo-1.git
+
+------------------------------------------------------------------------------------
+
+1)How to load files into repo,using branches
+
+--Active branch last commit will become new branch first commit
+
+
+
+2)How to upload website
+
+	1)Using drag and drop
+
+	2)GitHub Desktop
+
+3)How to get others repo into my account
+
+  MYTCS-1/website-1
+  
+
+4)Working with Local Repo
+
+1)Launch EC2 Instance on AWS Cloud
+2)git --version
+3)execute git lifecycle
+
+	1.create working dir
+	2.initialise git as a local repo
+	3.add files
+	4.commit the files
+
+----------------------------------------------------
+
+--git commands are executed in any environment(windows,Linux,Mac)
+
+1)Working with windows env
+
+	git lifecycle
+
+1)open command prompt -- cmd
+2)git --version
+mkdir APP1
+cd APP1
+git --version
+git status
+git init
+notepad one.txt
+git status
+git add one.txt
+git commit -m "First commit"
+cls
+git branch
+git log
+notepad two.txt
+git status
+git add two.txt
+git commit -m "Second commit"
+git branch dev-1
+git branch
+git checkout dev-1
+notepad a.txt
+git add a.txt
+git commit -m "dev-1 First commit"
+notepad b.txt
+git add b.txt
+git commit -m "dev-1 second commit"
+
+git branch
+git branch dev-2
+git branch
+git branch -D dev-2
+git log
+
+
+2)working with linux env
+
+   2.sudo su
+     cd
+   3  git --version
+    4  mkdir APP1
+    5  ls
+    6  cd APP1
+    7  git --version
+    8  clear
+    9  nano one.txt
+   10  git status
+   11  git init
+   12  git status
+   13  clear
+   14  nano one.txt
+   15  git status
+   16  git add one.txt
+   17  git status
+   18  git commit -m "First commit"
+   19  clear
+   20  nano one.txt
+   21  nano two.txt
+   22  git status
+   23  git add .
+   24  git status
+   25  git commit -m "Second commit"
+   26  clear
+   27  ls
+   28  git log
+
+   29  clear
+   30  git branch
+   31  git branch dev-1
+   32  git branch
+   33  git checkout dev-1
+   34  git branch
+   35  ls
+   36  nano a.txt
+   37  git add a.txt
+   38  git commit -m "dev-1 First commit"
+   39  nano b.txt
+   40  git add b.txt
+   41  git commit -m "dev-1 second commit"
+   42  clear
+   43  ls
+   44  git branch
+   45  git log
+   46  clear
+   47  git branch
+   48  git branch dev-2
+   49  git branch
+   50  git branch -D dev-2
